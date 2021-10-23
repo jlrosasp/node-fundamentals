@@ -1,4 +1,4 @@
-import RH from './utils/promises';
+import RH from '../utils/promises';
 
 // Encadenamiento de Promesas
 RH().getUsuarioByEmpleadoNumber(102, 3000)

@@ -1,4 +1,4 @@
-import RH from './utils/promises';
+import RH from '../utils/promises';
 
 // Definicion de Funcion Async/Await
 async function main1() {
