@@ -48,6 +48,7 @@ getUsuarioByID(11452, 3000, (usuario) => {
             const { salario, conceptoA, conceptoB, conceptoC } = aguinaldo;
             console.log(salario, conceptoA, conceptoB, conceptoC);
         });
+        // A este nivel
     });
 });
 console.log('Se esta ejecutando la llamada a la Base de Datos');

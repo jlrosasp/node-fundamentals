@@ -4,6 +4,8 @@
   "description": "API Curso MTWyDM 1er Cuatrimestre",
   "main": "api.js",
   "scripts": {
+    "dev": "nodemon dist\\06-async-await.js",
+    "prod": "node dist\\06-async-await.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Jose Luis Rosas Peimbert",

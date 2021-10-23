@@ -55,7 +55,7 @@ getUsuarioByID(11452, 3000, (usuario: any) => {
             const { salario, conceptoA, conceptoB, conceptoC } = aguinaldo;
             console.log(salario, conceptoA, conceptoB, conceptoC);
         })
-
+            // A este nivel
     });
 });
 
