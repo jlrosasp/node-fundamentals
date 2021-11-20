@@ -10,13 +10,13 @@ export default class MongoDBHelper {
     private dbUri: string;
     private env: any;
 
-    constructor(env: any) {
+    constructor(env: any = {}) {
         // Inicializar propiedades al crear instancia
         this.env = env;
         this.dbUri = `mongodb://${this.env.MONGODB.USERNAME}:${this.env.MONGODB.USERPWD}@${this.env.MONGODB.HOST}:${this.env.MONGODB.PORT}/${this.env.MONGODB.DATABASE}`;
     }
 
-    public static getInstance(env: any) {
+    public static getInstance(env: any = {}) {
         return this._instance || (this._instance = new this(env));
     }
 

@@ -1,13 +1,14 @@
 import { Router } from 'express';
-import { testing, getProductByID, newProduct } from '../controllers/product.controller';
+import ProductController from '../controllers/product.controller';
 
 const router = Router();
+const productCtrl = ProductController();
 
 // ---------- End Point ------------ --- Metodo --- 
 // http://localhost:3000/v1/products/getProductByID
-router.get('/testing', testing);
-router.get('/getProductByID/:id', getProductByID);
+router.get('/testing', productCtrl.testing);
+router.get('/getProductByID/:id', productCtrl.getProductByID);
 
-router.post('/newProduct', newProduct);
+router.post('/newProduct', productCtrl.newProduct);
 
 export default router;
