@@ -12,8 +12,10 @@
   "author": "Jose Luis Rosas Peimbert",
   "license": "MIT",
   "dependencies": {
+    "axios": "^0.24.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
+    "jw-paginate": "^1.0.4",
     "mongodb": "^4.1.4"
   },
   "devDependencies": {
