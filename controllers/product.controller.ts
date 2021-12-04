@@ -39,7 +39,7 @@ export default() => {
             const { id } = req.params;
             
             // Buscar Producto por ID
-            const result: any = await _mongoDB().db.collection('c_products').findOne({productId: id})
+            const result: any = await _mongoDB().db.collection('c_products').findOne({$or: [{productId: id}, {productCode: id}] })
             // Devolvemos Respuesta al Navegador
             res.status(200).json(result);
         },
